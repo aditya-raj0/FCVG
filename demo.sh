@@ -2,12 +2,15 @@ CUDA_VISIBLE_DEVICES=0 python demo_FCVG.py \
   --pretrained_model_name_or_path stabilityai/stable-video-diffusion-img2vid-xt-1-1 \
   --controlnext_path checkpoints/controlnext.safetensors \
   --unet_path checkpoints/unet.safetensors \
-  --image1_path example/real/001/00.png \
-  --image2_path example/real/001/24.png \
+  --image1_path /home/adity/FCVG_data_512/new/1737375985199.jpg \
+  --image2_path /home/adity/FCVG_data_512/new/1737375985173.jpg \
   --output_dir results \
+  --height 512 \
+  --width 512 \
   --control_weight 1.0 \
-  --num_inference_steps 25 \
-  --height 576 \
-  --width 1024 \
-
-
+  --num_inference_steps 61 \
+  --max_frame_num 61 \
+  --batch_frames 25 \
+  --overlap 8 \
+  --max_pts 3000 \
+  --max_lines 600 \

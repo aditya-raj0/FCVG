@@ -1,0 +1,9 @@
+__pycache_/
+*.env
+*.tmp
+*.jpg
+*.png
+*.jpeg
+checkpoints/** 
+models/resources/** 
+results/** 
